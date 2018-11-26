@@ -1,4 +1,4 @@
-<?php
+ <?php
 $logUsername = $_POST['username'];
 $fName = $_POST['fName'];
 $lName = $_POST['lName'];

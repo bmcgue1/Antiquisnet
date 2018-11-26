@@ -1,0 +1,11 @@
+.wrapper > div{
+    background: #fff000;
+    padding: 1em;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 50% 20%;
+    grid-column-gap: 1em;
+    
+}
