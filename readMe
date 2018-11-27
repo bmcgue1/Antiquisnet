@@ -1,0 +1,5 @@
+watchScript can be used to auto reload the project when a css or html file is saved, 
+With node.js installed one can go into their terminal and  run the install 
+npm install -g browser-sync
+
+TO RUN ./watchScript.sh
