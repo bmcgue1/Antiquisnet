@@ -1,4 +1,4 @@
-.wrapper{
+/* .wrapper{
     display: grid;
     grid-template-columns:2fr 1fr 2fr;
     grid-template-rows: 2fr 1fr 2fr;
@@ -28,4 +28,20 @@
     grid-row-end: 4;
     background: #b455b4;
     opacity:0.5;
+} */
+*{
+    margin: 0px;
+    padding: 0px;
 }
+.header{
+    display: grid;
+    grid-template-columns:  1fr;
+    grid-template-rows: 1fr;
+    grid-auto-rows: 100%;
+}
+
+.header > nav{
+    background: #faa;
+
+}
+
