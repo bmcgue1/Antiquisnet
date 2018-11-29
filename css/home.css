@@ -3,6 +3,10 @@
     margin: 0px;
     padding: 0px;
 }
+@font-face{
+    font-family: quickSand;
+    src: url(/fonts/Quicksand-Medium.ttf);
+}
 .header{
     display: grid;
     grid-template-columns:  1fr;
@@ -12,24 +16,38 @@
 }
 
 #nav{
-    background: #faa;
+    background: #f9eeee;
     grid-template-rows: repeat(7, 1fr);
     grid-template-columns: repeat(7, 1fr);
     display: grid;
 }
 
 .logo{
-    background: cornflowerblue;
+    background: #f9eeee;
     grid-column-start: 3;
     grid-column-end:6;
     grid-row-start: 1;
     grid-row-end: 7;  
 }
 .menue{
-    background:burlywood;
+    background:#f9eeee;
     grid-column-start: 2;
     grid-column-end:7;
     grid-row-end: 8;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.menue > li{
+    list-style-type: none;
+    text-align: center;
+    font-family:quickSand;
+    font-size: 1.5em;
+    font-weight: bold;
+
+    
+    
+    
+
 }
 .center{
     display: block;
@@ -38,5 +56,4 @@
     height: 100%;
     
 }
-
 
