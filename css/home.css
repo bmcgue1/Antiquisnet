@@ -31,5 +31,12 @@
     grid-column-end:7;
     grid-row-end: 8;
 }
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    
+}
 
 
