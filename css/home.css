@@ -2,14 +2,10 @@
 *{
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden !important;
-    max-width: 100%;
 }
 @font-face{
     font-family: quickSand;
-    /* src: url(/fonts/Quicksand-Medium.ttf); */
-    src: url(https://theantiquisnetwork.com/web_test/fonts/Quicksand-Medium.ttf);
-    
+    src: url(/fonts/Quicksand-Medium.ttf);
 }
 .header{
     display: grid;
@@ -58,4 +54,6 @@
     margin-left: auto;
     margin-right: auto;
     height: 100%;
+    
 }
+
