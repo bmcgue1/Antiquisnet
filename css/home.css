@@ -1,61 +1,106 @@
 
+@font-face{
+    font-family: quickSand;
+    src: url(/fonts/Quicksand-Medium.ttf);
+    src: url(https://theantiquisnetwork.com/web_test/fonts/Quicksand-Medium.ttf);
+}
+
+    
 *{
     margin: 0px;
     padding: 0px;
     overflow-x: hidden !important;
     max-width: 100%;
 }
-@font-face{
-    font-family: quickSand;
-    /* src: url(/fonts/Quicksand-Medium.ttf); */
-    src: url(https://theantiquisnetwork.com/web_test/fonts/Quicksand-Medium.ttf);
-    
-}
-.header{
+
+/* General connstruct */
+body{
     display: grid;
-    grid-template-columns:  1fr;
-    /* grid-template-rows: 1fr; */
-    /* this is the heigh of the rows and will fit the conent at 100% */
-    grid-auto-rows: 350px;
+    grid-template-rows: 1fr 1fr 1fr .5fr;
 }
 
-#nav{
+.section1{
     background: #f9eeee;
-    grid-template-rows: repeat(7, 1fr);
-    grid-template-columns: repeat(7, 1fr);
-    display: grid;
+    grid-row-start: 0;
+    grid-row-end: 1;
 }
-
-.logo{
-    background: #f9eeee;
-    grid-column-start: 3;
-    grid-column-end:6;
+.section2{
+    background: #f7f6f1;
     grid-row-start: 1;
-    grid-row-end: 7;  
+    grid-row-end: 2;
 }
-.menue{
-    background:#f9eeee;
-    grid-column-start: 2;
-    grid-column-end:7;
-    grid-row-end: 8;
+.section3{
+    grid-row-start: 2;
+    grid-row-gap: 3;
+}
+.section4{
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+body > div{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-.menue > li{
-    list-style-type: none;
-    text-align: center;
-    font-family:quickSand;
-    font-size: 1.5em;
-    font-weight: bold;
+    grid-template-columns: repeat(7, 14.28%);
+    grid-template-rows: repeat(5, 2em); 
+} 
 
-    
-    
-    
-
-}
 .center{
     display: block;
     margin-left: auto;
     margin-right: auto;
     height: 100%;
+    
 }
+/* section 1 */
+.logo{
+    grid-row-start: 1;
+    grid-row-end: 5;
+    grid-column-start: 3;
+    grid-column-end: 6;
+}
+.menue > li{
+    list-style-type: none;
+    text-align: center;
+    font-family:quickSand;
+    font-size: 1.15em;
+    font-weight: bold;
+    display: inline;
+    padding: .75em;
+}
+.menue{
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 8;
+    text-align: center;
+}
+
+/* Section 2 */
+.article1{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 7;
+}
+.form1{
+    display: inline;
+    grid-row-start: 3;
+    grid-row-end: 6;
+    grid-column-start: 2;
+    grid-column-end: 7;
+}
+.mag{
+    background: #575891;
+}
+
+
+
+
+
+
+
+
+
+/* @media (max-width: 600px){
+    background: red;
+} */
